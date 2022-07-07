@@ -1,0 +1,10 @@
+<h2>Search Tasks</h2>
+<form action="/tasks" method="GET">
+    <label>Title</label>
+    <input type="text" name="title" value="<%= searchOptions.title %>">
+    <button type="submit">Search</button>
+</form>
+<br>
+<% tasks.forEach(task => { %>
+    <div> <%= task.title %> </div>
+<% }) %>
