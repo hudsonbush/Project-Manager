@@ -36,7 +36,7 @@ router.post('/', async (req, res) => {
     } catch {
         res.render('tasks/new', {
         task: task,
-        errorMessage: 'Error creating Task'
+        errorMessage: 'Error creating Task, uh oh spaghettios'
         })
     }
 })
